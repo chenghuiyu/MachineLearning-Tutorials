@@ -27,8 +27,14 @@ from implicit.nearest_neighbours import TFIDFRecommender
 from implicit.nearest_neighbours import bm25_weight
 
 def read_data(path, min_rating=4.0):
+    '''
+    :param path: 读取数据的路径
+    :param min_rating: 用户评价分数的阈值
+    :return:
+    '''
 
     rating_datas = pd.read_csv(os.path.join(path, "ratings.csv"))
+    #过滤大于评价阈值的数据
     positive_datas = rating_datas[rating_datas.rating >= min_rating]
 
     movies_datas = pd.read_csv(os.path.join(path, "movies.csv"))
@@ -42,7 +48,6 @@ def read_data(path, min_rating=4.0):
 def calculate_similar_movies(input_path, output_filename,
                              model_name="als", min_rating=4.0):
     """
-
     :param input_path: 训练数据集的路径
     :param output_filename: 输出的文件名称
     :param model_name: 采用的
