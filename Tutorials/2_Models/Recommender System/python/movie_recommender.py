@@ -24,7 +24,6 @@ from implicit.als import AlternatingLeastSquares
 from implicit.nearest_neighbours import CosineRecommender
 from implicit.nearest_neighbours import BM25Recommender
 from implicit.nearest_neighbours import TFIDFRecommender
-from implicit.nearest_neighbours import ItemItemRecommender
 from implicit.nearest_neighbours import bm25_weight
 
 def read_data(path, min_rating=4.0):
