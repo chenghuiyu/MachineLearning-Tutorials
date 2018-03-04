@@ -50,7 +50,7 @@ def calculate_similar_movies(input_path, output_filename,
     """
     :param input_path: 训练数据集的路径
     :param output_filename: 输出的文件名称
-    :param model_name: 采用的模型类型
+    :param model_name: 采用的模型
     :param min_rating: 过滤所需的阈值
     :return:
     """
