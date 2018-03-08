@@ -8,6 +8,9 @@ DownLoad: https://grouplens.org/datasets/movielens/
 
 三、脚本运行
 python3 movielens_recommand.py --input /tmp/ml-20m --output /tmp/output
+
+--input：表示输入的数据集
+--output: 表示输出文件
 '''
 
 from __future__ import print_function, absolute_import
