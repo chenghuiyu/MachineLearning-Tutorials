@@ -1,5 +1,5 @@
 """
-对实现的函数进行单元测试
+对实现的函数进行测试
 """
 
 from decision_tree import DecisionTree
